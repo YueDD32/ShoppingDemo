@@ -1,0 +1,26 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/heima46
+    username: root
+    password: 123
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    default-property-inclusion: non_null
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    registry-fetch-interval-seconds: 5
+mybatis:
+  type-aliases-package: com.leyou.order.pojo
+ly:
+  jwt:
+    pubKeyPath: C:/lesson/heima46/ssh/id_rsa.pub # 公钥地址
+    cookieName: LY_TOKEN
+  worker:
+    workerId: 1
+    dataCenterId: 1
