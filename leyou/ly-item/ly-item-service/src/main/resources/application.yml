@@ -4,7 +4,7 @@ spring:
   application:
     name: item-service
   datasource:
-    url: jdbc:mysql://localhost:3306/heima46
+    url: jdbc:mysql://localhost:3306/sqltest
     username: root
     password: 123
   rabbitmq:
